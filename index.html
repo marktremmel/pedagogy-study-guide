@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedagogy Study Tool</title>
+    <title>Pedagógia Tanulóeszköz</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>📚 Pedagogy Study Tool</h1>
-            <p class="subtitle">Master the Fundamentals of Pedagogy with Active Recall</p>
+            <h1>📚 Pedagógia Tanulóeszköz</h1>
+            <p class="subtitle">Sajátítsd el a pedagógia alapjait aktív felidézéssel</p>
         </header>
 
         <nav class="mode-selector">
             <button class="mode-btn active" data-mode="flashcards">
                 <span class="icon">🎴</span>
-                Flashcards
+                Tanulókártyák
             </button>
             <button class="mode-btn" data-mode="quiz">
                 <span class="icon">✍️</span>
-                Practice Quiz
+                Gyakorló Kvíz
             </button>
             <button class="mode-btn" data-mode="concepts">
                 <span class="icon">🧠</span>
-                Concept Map
+                Fogalomtérkép
             </button>
         </nav>
 
@@ -32,19 +32,19 @@
         <div id="flashcards-mode" class="study-mode active">
             <div class="controls">
                 <div class="filter-group">
-                    <label>Filter by Category:</label>
+                    <label>Szűrés kategória szerint:</label>
                     <select id="category-filter">
-                        <option value="all">All Categories</option>
-                        <option value="definitions">Core Definitions</option>
-                        <option value="parenting">Parenting Styles</option>
-                        <option value="digital">Digital Age</option>
-                        <option value="groups">Group Development</option>
-                        <option value="processes">Developmental Processes</option>
+                        <option value="all">Összes kategória</option>
+                        <option value="definitions">Alapfogalmak</option>
+                        <option value="parenting">Nevelési stílusok</option>
+                        <option value="digital">Digitális kor</option>
+                        <option value="groups">Csoportfejlődés</option>
+                        <option value="processes">Fejlődési folyamatok</option>
                     </select>
                 </div>
                 <div class="stats">
-                    <span id="card-counter">Card 1 of 25</span>
-                    <span id="mastery-score">Mastered: 0/25</span>
+                    <span id="card-counter">1. kártya / 25</span>
+                    <span id="mastery-score">Elsajátítva: 0/25</span>
                 </div>
             </div>
 
@@ -52,12 +52,12 @@
                 <div class="flashcard" id="flashcard">
                     <div class="flashcard-inner">
                         <div class="flashcard-front">
-                            <div class="category-badge" id="category-badge">Definition</div>
-                            <div class="question" id="question">Loading...</div>
-                            <p class="hint">Click to reveal answer</p>
+                            <div class="category-badge" id="category-badge">Definíció</div>
+                            <div class="question" id="question">Betöltés...</div>
+                            <p class="hint">Kattints a válasz megtekintéséhez</p>
                         </div>
                         <div class="flashcard-back">
-                            <div class="answer" id="answer">Loading...</div>
+                            <div class="answer" id="answer">Betöltés...</div>
                             <div class="example" id="example"></div>
                         </div>
                     </div>
@@ -65,15 +65,15 @@
             </div>
 
             <div class="flashcard-controls">
-                <button class="btn btn-secondary" id="prev-card">← Previous</button>
-                <button class="btn btn-primary" id="flip-card">Flip Card</button>
-                <button class="btn btn-secondary" id="next-card">Next →</button>
+                <button class="btn btn-secondary" id="prev-card">← Előző</button>
+                <button class="btn btn-primary" id="flip-card">Megfordít</button>
+                <button class="btn btn-secondary" id="next-card">Következő →</button>
             </div>
 
             <div class="mastery-buttons">
-                <button class="btn btn-wrong" id="mark-wrong">😕 Need Review</button>
-                <button class="btn btn-ok" id="mark-ok">🤔 Getting There</button>
-                <button class="btn btn-correct" id="mark-correct">✅ Mastered</button>
+                <button class="btn btn-wrong" id="mark-wrong">😕 Ismétlés kell</button>
+                <button class="btn btn-ok" id="mark-ok">🤔 Majdnem</button>
+                <button class="btn btn-correct" id="mark-correct">✅ Elsajátítva</button>
             </div>
 
             <div class="progress-bar">
@@ -84,48 +84,48 @@
         <!-- Quiz Mode -->
         <div id="quiz-mode" class="study-mode">
             <div class="quiz-header">
-                <h2>Practice Quiz: Short Answer Questions</h2>
-                <p>Answer each question in 2-3 sentences. Click "Show Answer" to compare.</p>
-                <div class="quiz-timer" id="quiz-timer">Time: 00:00</div>
+                <h2>Gyakorló Kvíz: Rövid válaszos kérdések</h2>
+                <p>Válaszolj minden kérdésre 2-3 mondatban. Kattints a "Válasz mutatása" gombra az összehasonlításhoz.</p>
+                <div class="quiz-timer" id="quiz-timer">Idő: 00:00</div>
             </div>
 
             <div class="quiz-content">
                 <div class="question-card">
-                    <div class="question-number" id="q-number">Question 1 of 10</div>
-                    <div class="question-text" id="q-text">Loading...</div>
+                    <div class="question-number" id="q-number">1. kérdés / 10</div>
+                    <div class="question-text" id="q-text">Betöltés...</div>
                     
                     <textarea 
                         id="user-answer" 
-                        placeholder="Type your answer here (2-3 sentences)..."
+                        placeholder="Írd ide a válaszodat (2-3 mondat)..."
                         rows="5"
                     ></textarea>
 
                     <div class="answer-section hidden" id="answer-section">
-                        <h3>Model Answer:</h3>
+                        <h3>Mintaválasz:</h3>
                         <div class="model-answer" id="model-answer"></div>
                         
                         <div class="self-assessment">
-                            <p>How well did you answer?</p>
+                            <p>Mennyire sikerült a válaszod?</p>
                             <div class="assessment-buttons">
-                                <button class="assess-btn" data-score="0">❌ Missed it</button>
-                                <button class="assess-btn" data-score="1">⚠️ Partial</button>
-                                <button class="assess-btn" data-score="2">✅ Got it!</button>
+                                <button class="assess-btn" data-score="0">❌ Nem sikerült</button>
+                                <button class="assess-btn" data-score="1">⚠️ Részben</button>
+                                <button class="assess-btn" data-score="2">✅ Sikerült!</button>
                             </div>
                         </div>
                     </div>
 
                     <div class="quiz-controls">
-                        <button class="btn btn-secondary" id="q-prev">← Previous</button>
-                        <button class="btn btn-primary" id="show-answer">Show Answer</button>
-                        <button class="btn btn-secondary" id="q-next">Next →</button>
+                        <button class="btn btn-secondary" id="q-prev">← Előző</button>
+                        <button class="btn btn-primary" id="show-answer">Válasz mutatása</button>
+                        <button class="btn btn-secondary" id="q-next">Következő →</button>
                     </div>
                 </div>
 
                 <div class="quiz-summary hidden" id="quiz-summary">
-                    <h2>🎉 Quiz Complete!</h2>
+                    <h2>🎉 Kvíz befejezve!</h2>
                     <div class="score-display" id="score-display"></div>
                     <div class="weak-areas" id="weak-areas"></div>
-                    <button class="btn btn-primary" id="restart-quiz">Start Over</button>
+                    <button class="btn btn-primary" id="restart-quiz">Újrakezdés</button>
                 </div>
             </div>
         </div>
@@ -133,60 +133,60 @@
         <!-- Concept Map Mode -->
         <div id="concepts-mode" class="study-mode">
             <div class="concept-header">
-                <h2>Interactive Concept Map</h2>
-                <p>Click on any concept to see its definition and connections</p>
+                <h2>Interaktív Fogalomtérkép</h2>
+                <p>Kattints bármely fogalomra a definíció és kapcsolatok megtekintéséhez</p>
             </div>
 
             <div class="concept-map">
                 <div class="concept-layer layer-1">
                     <div class="concept-node" data-concept="culture">
-                        <div class="node-circle">Culture</div>
+                        <div class="node-circle">Kultúra</div>
                     </div>
                 </div>
 
                 <div class="concept-layer layer-2">
                     <div class="concept-node" data-concept="enculturation">
-                        <div class="node-circle">Enculturation</div>
+                        <div class="node-circle">Enkulturáció</div>
                     </div>
                 </div>
 
                 <div class="concept-layer layer-3">
                     <div class="concept-node" data-concept="socialization">
-                        <div class="node-circle">Socialization</div>
+                        <div class="node-circle">Szocializáció</div>
                     </div>
                 </div>
 
                 <div class="concept-layer layer-4">
                     <div class="concept-node" data-concept="education">
-                        <div class="node-circle">Education</div>
+                        <div class="node-circle">Nevelés</div>
                     </div>
                 </div>
 
                 <div class="concept-layer layer-5">
                     <div class="concept-node" data-concept="individualization">
-                        <div class="node-circle">Individualization</div>
+                        <div class="node-circle">Individualizáció</div>
                     </div>
                 </div>
 
                 <div class="concept-arenas">
-                    <h3>Arenas of Development</h3>
+                    <h3>Fejlődési színterek</h3>
                     <div class="arena-nodes">
                         <div class="concept-node arena" data-concept="family">
-                            <div class="node-circle">Family</div>
+                            <div class="node-circle">Család</div>
                         </div>
                         <div class="concept-node arena" data-concept="school">
-                            <div class="node-circle">School</div>
+                            <div class="node-circle">Iskola</div>
                         </div>
                         <div class="concept-node arena" data-concept="media">
-                            <div class="node-circle">Media</div>
+                            <div class="node-circle">Média</div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="concept-details" id="concept-details">
-                <h3 id="concept-title">Select a concept to learn more</h3>
-                <div id="concept-description">Click on any node in the map above.</div>
+                <h3 id="concept-title">Válassz egy fogalmat a részletek megtekintéséhez</h3>
+                <div id="concept-description">Kattints a fenti térkép bármelyik elemére.</div>
             </div>
         </div>
     </div>

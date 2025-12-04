@@ -1,254 +1,254 @@
-// ==================== DATA ====================
+// ==================== ADATOK ====================
 
 const flashcardsData = [
-    // Core Definitions
+    // Alapfogalmak
     {
         category: 'definitions',
-        question: 'What is Pedagogy?',
-        answer: 'The science encompassing the theory and practice of education and instruction. Its subject is the process by which a human being becomes a personality.',
-        example: 'Originally meant "child-leading" in Greek, now includes both educational science and practice.'
+        question: 'Mi a pedagógia?',
+        answer: 'Az a tudomány, amely a nevelés és oktatás elméletét és gyakorlatát foglalja magában. Tárgya az a folyamat, amelyben az ember személyiséggé válik.',
+        example: 'Eredetileg görögül "gyermekvezetést" jelentett, ma már magában foglalja a neveléstudományt és a gyakorlatot is.'
     },
     {
         category: 'definitions',
-        question: 'What is Socialization?',
-        answer: 'The lifelong process by which an individual acquires the knowledge and skills necessary to integrate into a group and actively participate in community life.',
-        example: 'Includes both intentional influences (education) and spontaneous influences (environment).'
+        question: 'Mi a szocializáció?',
+        answer: 'Az az élethosszig tartó folyamat, amelyben az egyén elsajátítja a csoportba való beilleszkedéshez és a közösségi életben való aktív részvételhez szükséges tudást és készségeket.',
+        example: 'Magában foglalja a szándékos hatásokat (nevelés) és a spontán hatásokat (környezet) egyaránt.'
     },
     {
         category: 'definitions',
-        question: 'What is Enculturation?',
-        answer: 'The process of "growing into" a culture and becoming a cultural being. It is the most comprehensive learning process through which we acquire basic cultural skills.',
-        example: 'A child learns their native language and family customs through enculturation.'
+        question: 'Mi az enkulturáció?',
+        answer: 'A kultúrába való "belenövés" folyamata, amelyben kulturális lénnyé válunk. Ez a legátfogóbb tanulási folyamat, amelyben elsajátítjuk az alapvető kulturális készségeket.',
+        example: 'A gyermek az anyanyelvét és a családi szokásait az enkulturáció révén tanulja meg.'
     },
     {
         category: 'definitions',
-        question: 'What is Education (Nevelés)?',
-        answer: 'The conscious, planned, and purposeful component of socialization designed to provide knowledge, values, and skills for adult roles in society.',
-        example: 'School curriculum is education; random media exposure is not.'
+        question: 'Mi a nevelés?',
+        answer: 'A szocializáció tudatos, tervszerű és célirányos összetevője, amely a társadalmi szerepekhez szükséges tudás, értékek és készségek átadására irányul.',
+        example: 'Az iskolai tanterv nevelés; a média véletlenszerű hatása nem az.'
     },
     {
         category: 'definitions',
-        question: 'What is Individualization?',
-        answer: 'The process of becoming a unique individual, characterized by the development of judgment, self-control, and a sense of responsibility.',
-        example: 'The final outcome of the developmental process from culture to unique person.'
+        question: 'Mi az individualizáció?',
+        answer: 'Az egyéni személyiséggé válás folyamata, amelyet az ítélőképesség, az önkontroll és a felelősségtudat kifejlődése jellemez.',
+        example: 'A kultúrától az egyéni személyiségig tartó fejlődési folyamat végeredménye.'
     },
 
-    // Parenting Styles
+    // Nevelési stílusok
     {
         category: 'parenting',
-        question: 'Describe Authoritarian Parenting Style',
-        answer: 'Expects respect and obedience, relies heavily on punishment, and is not interested in the child\'s opinion. Results in children with weaker social skills who become dependent on authority.',
-        example: '"Because I said so" is a typical authoritarian response.'
-    },
-    {
-        category: 'parenting',
-        question: 'Describe Authoritative (Supervisory-Deliberative) Style',
-        answer: 'Parent explains the reasons for rewards and punishments, considers the child\'s opinion, and encourages independence. Fosters self-control and responsibility.',
-        example: 'Parent explains why homework matters and asks child\'s input on scheduling.'
+        question: 'Jellemezd az autoriter (tekintélyelvű) nevelési stílust!',
+        answer: 'Tiszteletet és engedelmességet vár el, nagymértékben a büntetésre támaszkodik, és nem érdekli a gyermek véleménye. Gyengébb szociális készségekkel rendelkező, a tekintélytől függő gyermekeket eredményez.',
+        example: 'Az "Azért, mert én mondtam" tipikus autoriter válasz.'
     },
     {
         category: 'parenting',
-        question: 'Describe Permissive/Neglectful Style',
-        answer: 'Characterized by a lack of limits and expectations. Results in children who are immature, have difficulty with self-control, and possess a diminished sense of responsibility.',
-        example: 'Parent lets child decide bedtime without any guidance or structure.'
+        question: 'Jellemezd az autoritatív (irányító-magyarázó) stílust!',
+        answer: 'A szülő megmagyarázza a jutalom és büntetés okait, figyelembe veszi a gyermek véleményét, és bátorítja az önállóságot. Önkontrollt és felelősségtudatot fejleszt.',
+        example: 'A szülő elmagyarázza, miért fontos a házi feladat, és kikéri a gyermek véleményét az ütemezésről.'
+    },
+    {
+        category: 'parenting',
+        question: 'Jellemezd a megengedő/elhanyagoló stílust!',
+        answer: 'Korlátok és elvárások hiánya jellemzi. Éretlen, önkontrollal küzdő és csökkent felelősségtudatú gyermekeket eredményez.',
+        example: 'A szülő hagyja, hogy a gyermek útmutatás vagy struktúra nélkül döntse el a lefekvési időt.'
     },
 
-    // Group Development
+    // Csoportfejlődés
     {
         category: 'groups',
-        question: 'What is the Forming phase?',
-        answer: 'Initial stage of group development characterized by awkwardness, uncertainty, and unclear roles and rules. Members are often hesitant.',
-        example: 'First day of a new class when students don\'t know each other yet.'
+        question: 'Mi jellemzi az alakulás (forming) fázist?',
+        answer: 'A csoportfejlődés kezdeti szakasza, amelyet kényelmetlenség, bizonytalanság és homályos szerepek, szabályok jellemeznek. A tagok gyakran tartózkodóak.',
+        example: 'Egy új osztály első napja, amikor a diákok még nem ismerik egymást.'
     },
     {
         category: 'groups',
-        question: 'What is the Storming phase?',
-        answer: 'Members compete for position and dominance, leading to open and hidden conflicts. A critical phase for establishing group hierarchy.',
-        example: 'Students test boundaries and vie for social status in the classroom.'
+        question: 'Mi jellemzi a viharzás (storming) fázist?',
+        answer: 'A tagok pozícióért és dominanciáért versenyeznek, ami nyílt és rejtett konfliktusokhoz vezet. Kritikus szakasz a csoporthierarchia kialakításához.',
+        example: 'A diákok tesztelik a határokat és a társadalmi státuszért versenyeznek az osztályban.'
     },
     {
         category: 'groups',
-        question: 'What is the Norming phase?',
-        answer: 'The group\'s behavioral rules, style, and norms are established, forming a true community. Conflicts are resolved and shared standards emerge.',
-        example: 'Class develops its own inside jokes, rituals, and unwritten rules.'
+        question: 'Mi jellemzi a normaképződés (norming) fázist?',
+        answer: 'A csoport viselkedési szabályai, stílusa és normái kialakulnak, valódi közösséget alkotva. A konfliktusok megoldódnak és közös normák alakulnak ki.',
+        example: 'Az osztály kialakítja saját belső vicceit, rituáléit és íratlan szabályait.'
     },
     {
         category: 'groups',
-        question: 'What is the Performing phase?',
-        answer: 'The group is predictable, calm, task-oriented, and characterized by a strong "we-consciousness." Members work effectively together.',
-        example: 'A well-functioning class that collaborates smoothly on projects.'
+        question: 'Mi jellemzi a működés (performing) fázist?',
+        answer: 'A csoport kiszámítható, nyugodt, feladatorientált, és erős "mi-tudat" jellemzi. A tagok hatékonyan dolgoznak együtt.',
+        example: 'Egy jól működő osztály, amely zökkenőmentesen együttműködik a projekteken.'
     },
     {
         category: 'groups',
-        question: 'What is the Adjourning phase?',
-        answer: 'The group formally dissolves at the end of its task or lifecycle, though it may continue to exist as an informal group.',
-        example: 'End of the school year when the class officially disbands.'
+        question: 'Mi jellemzi a megszűnés (adjourning) fázist?',
+        answer: 'A csoport hivatalosan feloszlik a feladat vagy életciklus végén, bár informális csoportként továbbra is létezhet.',
+        example: 'A tanév vége, amikor az osztály hivatalosan feloszlik.'
     },
 
-    // Digital Age
+    // Digitális kor
     {
         category: 'digital',
-        question: 'Who are Digital Immigrants?',
-        answer: 'Individuals who encountered ICT as adults and had to learn to adapt to it. Includes Baby Boomer (1946-1964) and X (1965-1979) generations.',
-        example: 'They prefer text, single-tasking, and delayed rewards. They "learned" technology.'
+        question: 'Kik a digitális bevándorlók?',
+        answer: 'Azok az egyének, akik felnőttként találkoztak az IKT-val, és meg kellett tanulniuk alkalmazkodni hozzá. Ide tartozik a Baby Boomer (1946-1964) és az X (1965-1979) generáció.',
+        example: 'Előnyben részesítik a szöveget, az egyszeri feladatokra koncentrálást és a késleltetett jutalmakat. "Megtanulták" a technológiát.'
     },
     {
         category: 'digital',
-        question: 'Who are Digital Natives?',
-        answer: 'Individuals who have grown up with digital technology from birth, making it their natural environment. Includes Y, Z, and Alpha generations.',
-        example: 'They prefer images/video, parallel processing, and immediate gratification. Technology is their "native language."'
+        question: 'Kik a digitális bennszülöttek?',
+        answer: 'Azok az egyének, akik születésüktől fogva a digitális technológiával nőttek fel, így az a természetes környezetük. Ide tartozik az Y, Z és Alpha generáció.',
+        example: 'Előnyben részesítik a képeket/videókat, a párhuzamos feldolgozást és az azonnali kielégülést. A technológia az "anyanyelvük".'
     },
     {
         category: 'digital',
-        question: 'What is Mean World Syndrome?',
-        answer: 'A psychological effect where exposure to violence-rich media leads to increased anxiety and a belief that the world is more dangerous than it actually is.',
-        example: 'A child who watches violent media may become fearful, not aggressive.'
+        question: 'Mi a "gonosz világ szindróma" (Mean World Syndrome)?',
+        answer: 'Pszichológiai hatás, amelyben az erőszakban gazdag médiának való kitettség fokozott szorongáshoz és ahhoz a meggyőződéshez vezet, hogy a világ veszélyesebb, mint amilyen valójában.',
+        example: 'Az erőszakos médiát néző gyermek félénkké válhat, nem pedig agresszívvá.'
     },
     {
         category: 'digital',
-        question: 'What is Parental Mediation?',
-        answer: 'The active role a parent takes to help a child understand, interpret, and critically evaluate media content. Has three forms: co-viewing, restrictive, and active.',
-        example: 'Discussing with a child what they saw in a movie and its real-world implications.'
+        question: 'Mi a szülői mediáció?',
+        answer: 'Az a aktív szerep, amelyet a szülő vállal, hogy segítse a gyermeket a médiatartalmak megértésében, értelmezésében és kritikus értékelésében. Három formája van: együtt nézés, korlátozó és aktív.',
+        example: 'Beszélgetés a gyermekkel arról, amit egy filmben látott, és annak valós következményeiről.'
     },
 
-    // Developmental Processes
+    // Fejlődési folyamatok
     {
         category: 'processes',
-        question: 'What are Primary Groups?',
-        answer: 'Groups that provide protection and support, characterized by frequent interaction, emotional bonds, and mutual familiarity.',
-        example: 'Family is the quintessential primary group; a close-knit class can evolve into one.'
+        question: 'Mik az elsődleges csoportok?',
+        answer: 'Védelmet és támogatást nyújtó csoportok, amelyeket gyakori interakció, érzelmi kötelékek és kölcsönös ismertség jellemez.',
+        example: 'A család a legfontosabb elsődleges csoport; egy összetartó osztály is ilyenné fejlődhet.'
     },
     {
         category: 'processes',
-        question: 'What are Secondary Groups?',
-        answer: 'Groups held together by formal structures, where emotional involvement among members is not necessary.',
-        example: 'A school class at its inception is a secondary group.'
+        question: 'Mik a másodlagos csoportok?',
+        answer: 'Formális struktúrák által összetartott csoportok, ahol a tagok közötti érzelmi bevonódás nem szükséges.',
+        example: 'Egy iskolai osztály a kezdetekkor másodlagos csoport.'
     },
     {
         category: 'processes',
-        question: 'What is Didactics?',
-        answer: 'Also known as the theory of instruction, this sub-discipline explores and analyzes the process of teaching, examining its content, organization, and methods.',
-        example: 'Studying HOW to teach math effectively is didactics.'
+        question: 'Mi a didaktika?',
+        answer: 'Az oktatás elmélete néven is ismert szakterület, amely a tanítási folyamatot kutatja és elemzi, vizsgálva annak tartalmát, szervezését és módszereit.',
+        example: 'Annak tanulmányozása, HOGYAN tanítsunk hatékonyan matematikát, didaktika.'
     },
     {
         category: 'processes',
-        question: 'What is Andragogy?',
-        answer: 'A sub-discipline of pedagogy focused on the organized learning of adults after their initial schooling and vocational training.',
-        example: 'Adult education programs and professional development courses.'
+        question: 'Mi az andragógia?',
+        answer: 'A pedagógia azon ága, amely a felnőttek szervezett tanulásával foglalkozik az alapfokú iskoláztatás és szakképzés befejezése után.',
+        example: 'Felnőttképzési programok és szakmai továbbképzések.'
     },
     {
         category: 'definitions',
-        question: 'What are the 4 characteristics of Culture?',
-        answer: 'Culture is: Shared (belongs to a group), Unique (distinguishes groups), Learned (not biological), and Diverse (has many facets).',
-        example: 'Language, customs, art, and values are all parts of culture that we learn.'
+        question: 'Melyek a kultúra 4 jellemzője?',
+        answer: 'A kultúra: Közös (egy csoporthoz tartozik), Egyedi (megkülönbözteti a csoportokat), Tanult (nem biológiai) és Sokrétű (sok arca van).',
+        example: 'A nyelv, szokások, művészet és értékek mind a kultúra tanult részei.'
     },
     {
         category: 'processes',
-        question: 'What are the key functions of the Family?',
-        answer: 'Provides biological and psychological support, emotional balance, nurturing, education, socialization, status establishment, behavior guidance, conflict management, and cultural transmission.',
-        example: 'Family teaches "me vs. others," establishes boundaries, and transmits core values.'
+        question: 'Melyek a család fő funkciói?',
+        answer: 'Biológiai és pszichológiai támogatás, érzelmi egyensúly, gondoskodás, nevelés, szocializáció, státusz megállapítása, viselkedésirányítás, konfliktuskezelés és kultúraátadás.',
+        example: 'A család tanítja az "én vs. mások" megkülönböztetést, határokat állít fel és alapértékeket ad át.'
     },
     {
         category: 'digital',
-        question: 'Why are books important vs. screens for children?',
-        answer: 'Books help children understand symbols carry information, develop visual harmony sense, and provide tension management through character projection. Creates parent-child bonding unlike passive screen time.',
-        example: 'Reading fairy tales helps children process good vs. evil concepts.'
+        question: 'Miért fontosak a könyvek a képernyőkkel szemben a gyermekek számára?',
+        answer: 'A könyvek segítenek megérteni, hogy a szimbólumok információt hordoznak, fejlesztik a vizuális harmónia érzékét, és feszültségkezelést biztosítanak a karakterekbe való projekció révén. Szülő-gyermek kötődést teremt, ellentétben a passzív képernyőidővel.',
+        example: 'A mesék olvasása segít a gyermekeknek feldolgozni a jó és rossz fogalmakat.'
     },
     {
         category: 'digital',
-        question: 'What are the 3 forms of Parental Mediation?',
-        answer: 'Co-viewing (watching together), Restrictive mediation (limiting time/content), and Active mediation (discussing and evaluating content).',
-        example: 'Active mediation helps children understand advertising motives and media construction.'
+        question: 'Melyek a szülői mediáció 3 formája?',
+        answer: 'Együtt nézés (közös nézelődés), Korlátozó mediáció (idő/tartalom korlátozása) és Aktív mediáció (tartalom megbeszélése és értékelése).',
+        example: 'Az aktív mediáció segít a gyermekeknek megérteni a reklámok szándékait és a média felépítését.'
     }
 ];
 
 const quizQuestions = [
     {
-        question: 'What is the historical and modern distinction between the terms "pedagogy" and "educational science"?',
-        answer: 'Historically, "pedagogy" referred to the practical forms of education. Today, the term has expanded to also include the scientific investigation and research of educational reality, a field also known as "educational science." Therefore, while pedagogy originally focused on practice, it now encompasses both the theory (educational science) and practice of education and instruction.'
+        question: 'Mi a történelmi és modern különbség a "pedagógia" és a "neveléstudomány" kifejezések között?',
+        answer: 'Történelmileg a "pedagógia" a nevelés gyakorlati formáira utalt. Ma a kifejezés kibővült, és magában foglalja a nevelési valóság tudományos vizsgálatát és kutatását is, amit "neveléstudománynak" is neveznek. Tehát míg a pedagógia eredetileg a gyakorlatra összpontosított, ma már magában foglalja a nevelés és oktatás elméletét (neveléstudomány) és gyakorlatát egyaránt.'
     },
     {
-        question: 'Define the process of "socialization" and describe its two primary forms of influence.',
-        answer: 'Socialization is the lifelong process of preparing an individual for social life, coexistence with others, and active participation in the community. It consists of two types of influences: intentional, planned effects from institutions like schools (education, training), and spontaneous, random effects from the broader environment that occur throughout life.'
+        question: 'Határozd meg a "szocializáció" folyamatát és írd le a hatás két fő formáját!',
+        answer: 'A szocializáció az az élethosszig tartó folyamat, amely felkészíti az egyént a társadalmi életre, a másokkal való együttélésre és a közösségben való aktív részvételre. Két típusú hatásból áll: szándékos, tervezett hatások intézményektől, mint az iskola (nevelés, oktatás), és spontán, véletlenszerű hatások a tágabb környezetből, amelyek az élet során végig érvényesülnek.'
     },
     {
-        question: 'Explain the relationship between the concepts of enculturation, socialization, and education.',
-        answer: 'Enculturation is the process of acquiring the foundational elements of a specific culture. Socialization is a component of this, referring more specifically to learning the moral order and rules of a society. Education is a tool for both, representing the conscious, purposeful, and planned actions that help an individual integrate into their culture and society.'
+        question: 'Magyarázd el az enkulturáció, szocializáció és nevelés fogalmak közötti kapcsolatot!',
+        answer: 'Az enkulturáció a kultúra alapelemeinek elsajátítási folyamata. A szocializáció ennek része, amely konkrétabban a társadalom erkölcsi rendjének és szabályainak megtanulására utal. A nevelés mindkettő eszköze, amely a tudatos, tervszerű és célirányos tevékenységeket jelenti, amelyek segítik az egyént kultúrájába és társadalmába beilleszkedni.'
     },
     {
-        question: 'What are the key functions of the family as the primary scene of socialization?',
-        answer: 'The family\'s key functions include providing biological and psychological support, ensuring emotional balance, and performing nurturing, educational, and socialization tasks. It also establishes a family member\'s status, guides behavior, manages conflict, and transmits culture, worldview, and values.'
+        question: 'Melyek a család mint a szocializáció elsődleges színterének fő funkciói?',
+        answer: 'A család fő funkciói közé tartozik a biológiai és pszichológiai támogatás nyújtása, az érzelmi egyensúly biztosítása, valamint a gondoskodási, nevelési és szocializációs feladatok ellátása. Emellett megállapítja a családtag státuszát, irányítja a viselkedést, kezeli a konfliktusokat, és közvetíti a kultúrát, világnézetet és értékeket.'
     },
     {
-        question: 'Describe the three main parental upbringing styles and their general effects on a child\'s behavior.',
-        answer: 'The three styles are: Authoritarian, which expects obedience and uses punishment, leading to children with weaker social skills who wait for instructions; Authoritative (Supervisory-Deliberative), which explains rules and values the child\'s opinion, fostering independence and a sense of responsibility; and Permissive/Neglectful, which lacks limits, resulting in children who may be immature and have poor self-control.'
+        question: 'Írd le a három fő szülői nevelési stílust és általános hatásaikat a gyermek viselkedésére!',
+        answer: 'A három stílus: Autoriter (tekintélyelvű), amely engedelmességet vár el és büntetéssel dolgozik, gyengébb szociális készségű, utasításokra váró gyermekeket eredményez; Autoritatív (irányító-magyarázó), amely megmagyarázza a szabályokat és értékeli a gyermek véleményét, önállóságot és felelősségtudatot fejleszt; és Megengedő/Elhanyagoló, amelynek nincsenek korlátai, ami éretlen és gyenge önkontrollú gyermekeket eredményez.'
     },
     {
-        question: 'List and briefly explain the five phases of group development as they apply to a school setting.',
-        answer: 'The five phases are: Forming (Alakulás) - Initial stage characterized by awkwardness and unclear roles/rules; Storming (Viharzás) - Members compete for position and dominance, leading to conflicts; Norming (Normaképződés) - The group\'s behavioral rules, style, and norms are established; Performing (Működés) - The group is predictable, calm, task-oriented, and characterized by "we-consciousness"; Adjourning (Megszűnés) - The group formally dissolves.'
+        question: 'Sorold fel és röviden magyarázd el a csoportfejlődés öt fázisát az iskolai környezetben!',
+        answer: 'Az öt fázis: Alakulás (Forming) - Kezdeti szakasz, amelyet kényelmetlenség és homályos szerepek/szabályok jellemeznek; Viharzás (Storming) - A tagok pozícióért és dominanciáért versenyeznek, konfliktusokhoz vezetve; Normaképződés (Norming) - A csoport viselkedési szabályai, stílusa és normái kialakulnak; Működés (Performing) - A csoport kiszámítható, nyugodt, feladatorientált, "mi-tudat" jellemzi; Megszűnés (Adjourning) - A csoport hivatalosan feloszlik.'
     },
     {
-        question: 'According to Marc Prensky\'s theory, what are the fundamental differences between "Digital Natives" and "Digital Immigrants" in their relationship with technology?',
-        answer: 'Digital Immigrants encountered information and communication technology (ICT) as adults, learning to adapt to it, whereas Digital Natives have grown up with it as their natural environment. Immigrants tend to prefer text, single-tasking, and delayed rewards, while Natives prefer images and video, parallel processing, and immediate gratification.'
+        question: 'Marc Prensky elmélete szerint melyek az alapvető különbségek a "digitális bennszülöttek" és a "digitális bevándorlók" között a technológiához való viszonyukban?',
+        answer: 'A digitális bevándorlók felnőttként találkoztak az információs és kommunikációs technológiával (IKT), és meg kellett tanulniuk alkalmazkodni hozzá, míg a digitális bennszülöttek vele együtt nőttek fel, természetes környezetükként. A bevándorlók hajlamosak előnyben részesíteni a szöveget, az egyszeri feladatokra koncentrálást és a késleltetett jutalmakat, míg a bennszülöttek a képeket és videókat, a párhuzamos feldolgozást és az azonnali kielégülést preferálják.'
     },
     {
-        question: 'What is the "Mean World Syndrome" and how does it relate to media consumption?',
-        answer: 'The "Mean World Syndrome" is a phenomenon where the constant sight of aggression and violence in media causes anxiety and antisocial behavior rather than aggression. It leads to a distorted worldview where the individual perceives the world as a more dangerous and frightening place than it actually is.'
+        question: 'Mi a "gonosz világ szindróma" és hogyan kapcsolódik a médiafogyasztáshoz?',
+        answer: 'A "gonosz világ szindróma" olyan jelenség, amely során a médiában látott állandó agresszió és erőszak szorongást és antiszociális viselkedést okoz, nem pedig agressziót. Torzult világszemlélethez vezet, amelyben az egyén a világot veszélyesebb és félelmetesebb helynek érzékeli, mint amilyen valójában.'
     },
     {
-        question: 'Why are traditional books and fairy tales considered important for a young child\'s development, especially in comparison to screen-based media?',
-        answer: 'Books and fairy tales are crucial because they help a child understand that symbols carry information, develop a sense of visual harmony, and provide a way to manage tension by projecting feelings onto characters. This process helps the child recognize and handle concepts of good and evil and provides an intimate bonding experience with the parent, unlike passive screen time.'
+        question: 'Miért tartják fontosnak a hagyományos könyveket és meséket a kisgyermek fejlődése szempontjából, különösen a képernyő-alapú médiával összehasonlítva?',
+        answer: 'A könyvek és mesék fontosak, mert segítenek a gyermeknek megérteni, hogy a szimbólumok információt hordoznak, fejlesztik a vizuális harmónia érzékét, és lehetőséget biztosítanak a feszültség kezelésére az érzelmek szereplőkre vetítése révén. Ez a folyamat segít a gyermeknek felismerni és kezelni a jó és rossz fogalmait, valamint intim kötődési élményt nyújt a szülővel, ellentétben a passzív képernyőidővel.'
     },
     {
-        question: 'What is parental "mediation" in the context of children\'s media use, and what are its three forms?',
-        answer: 'Parental mediation refers to the strategies parents use to help children understand and process media. Its three forms are: Co-viewing, where the parent and child watch together; Restrictive mediation, which involves limiting the time or type of content consumed; and Active mediation, which involves discussing and evaluating what was seen to help the child understand its real-world implications.'
+        question: 'Mi a szülői "mediáció" a gyermekek médiafogyasztásának kontextusában, és melyek a három formája?',
+        answer: 'A szülői mediáció azokra a stratégiákra utal, amelyeket a szülők alkalmaznak, hogy segítsék a gyermekeket megérteni és feldolgozni a médiát. Három formája van: Együtt nézés, amikor a szülő és gyermek együtt néz; Korlátozó mediáció, amely magában foglalja a fogyasztott tartalom idejének vagy típusának korlátozását; és Aktív mediáció, amely magában foglalja a látottak megbeszélését és értékelését, hogy segítse a gyermeket megérteni azok valós következményeit.'
     }
 ];
 
 const conceptsData = {
     culture: {
-        title: 'Culture',
-        description: 'The total, human-made environment we inhabit. It includes knowledge, beliefs, art, morals, law, customs, and any other capabilities and habits acquired by being a member of society. Culture is: Shared, Unique, Learned, and Diverse.',
-        connections: ['Enculturation']
+        title: 'Kultúra',
+        description: 'A teljes, ember alkotta környezet, amelyben élünk. Magában foglalja a tudást, hiedelmeket, művészetet, erkölcsöt, törvényt, szokásokat és minden más képességet és szokást, amelyet a társadalom tagjaként sajátítunk el. A kultúra: Közös, Egyedi, Tanult és Sokrétű.',
+        connections: ['Enkulturáció']
     },
     enculturation: {
-        title: 'Enculturation',
-        description: 'The process of "growing into" a culture and absorbing its foundational elements. This is where we learn language, basic customs, and cultural stories, primarily within the family setting.',
-        connections: ['Culture', 'Socialization']
+        title: 'Enkulturáció',
+        description: 'A kultúrába való "belenövés" és annak alapelemeinek elsajátítási folyamata. Itt tanuljuk meg a nyelvet, az alapvető szokásokat és a kulturális történeteket, elsősorban a család keretein belül.',
+        connections: ['Kultúra', 'Szocializáció']
     },
     socialization: {
-        title: 'Socialization',
-        description: 'The lifelong process of learning to function within society by adopting its norms and rules. Includes both intentional (education) and spontaneous (environment) influences.',
-        connections: ['Enculturation', 'Education', 'Family', 'School', 'Media']
+        title: 'Szocializáció',
+        description: 'Az élethosszig tartó folyamat, amelyben megtanulunk működni a társadalomban annak normái és szabályai elfogadásával. Magában foglalja a szándékos (nevelés) és spontán (környezet) hatásokat egyaránt.',
+        connections: ['Enkulturáció', 'Nevelés', 'Család', 'Iskola', 'Média']
     },
     education: {
-        title: 'Education (Nevelés)',
-        description: 'The conscious, planned, and purposeful component of socialization. The formal system societies create to ensure essential cultural and social knowledge is passed on in a structured way.',
-        connections: ['Socialization', 'Individualization']
+        title: 'Nevelés',
+        description: 'A szocializáció tudatos, tervszerű és célirányos összetevője. A társadalmak által létrehozott formális rendszer, amely biztosítja, hogy az alapvető kulturális és társadalmi tudás strukturált módon átadódjon.',
+        connections: ['Szocializáció', 'Individualizáció']
     },
     individualization: {
-        title: 'Individualization',
-        description: 'The outcome of the developmental process, resulting in a unique identity as a responsible, self-aware individual with judgment, self-control, and a sense of responsibility.',
-        connections: ['Education']
+        title: 'Individualizáció',
+        description: 'A fejlődési folyamat eredménye, amely egyedi identitást eredményez felelős, öntudatos egyénként, ítélőképességgel, önkontrollal és felelősségtudattal.',
+        connections: ['Nevelés']
     },
     family: {
-        title: 'Family Arena',
-        description: 'The primary and "amateur" arena of socialization. A reference group where identity is first forged. Key tasks: teaching "me vs. others," establishing boundaries, transmitting values, and language acquisition. Parenting styles (Authoritarian, Authoritative, Permissive) have lasting impacts.',
-        connections: ['Socialization']
+        title: 'Család mint színtér',
+        description: 'A szocializáció elsődleges és "amatőr" színtere. Olyan referencia csoport, ahol az identitás először formálódik. Fő feladatai: az "én vs. mások" tanítása, határok felállítása, értékek átadása és nyelvelsajátítás. A nevelési stílusok (autoriter, autoritatív, megengedő) tartós hatással vannak.',
+        connections: ['Szocializáció']
     },
     school: {
-        title: 'School Arena',
-        description: 'The "professional" arena of socialization that builds upon family foundation in a planned manner. Manages group dynamics through 5 phases: Forming → Storming → Norming → Performing → Adjourning. Transforms secondary groups into primary groups.',
-        connections: ['Socialization']
+        title: 'Iskola mint színtér',
+        description: 'A szocializáció "professzionális" színtere, amely tervszerűen épít a család alapjaira. Csoportdinamikát kezel 5 fázison keresztül: Alakulás → Viharzás → Normaképződés → Működés → Megszűnés. A másodlagos csoportokat elsődleges csoportokká alakítja.',
+        connections: ['Szocializáció']
     },
     media: {
-        title: 'Media Arena',
-        description: 'A dominant 21st-century socialization arena. Creates generational divide between Digital Immigrants and Digital Natives. Potential negative impacts: distorted worldview (Mean World Syndrome), passive consumption, weakened imagination, and blurred reality/fiction. Parental mediation is critical.',
-        connections: ['Socialization']
+        title: 'Média mint színtér',
+        description: 'A 21. század meghatározó szocializációs színtere. Generációs szakadékot teremt a digitális bevándorlók és digitális bennszülöttek között. Lehetséges negatív hatásai: torzult világkép (gonosz világ szindróma), passzív fogyasztás, gyengült képzelet és elmosódott valóság/fikció. A szülői mediáció kritikus.',
+        connections: ['Szocializáció']
     }
 };
 
-// ==================== STATE ====================
+// ==================== ÁLLAPOT ====================
 
 let currentCardIndex = 0;
 let masteredCards = new Set();
@@ -258,7 +258,7 @@ let quizAnswers = [];
 let quizStartTime = null;
 let timerInterval = null;
 
-// ==================== FLASHCARD MODE ====================
+// ==================== TANULÓKÁRTYA MÓD ====================
 
 function initFlashcards() {
     updateFlashcard();
@@ -288,21 +288,21 @@ function updateFlashcard() {
 
 function getCategoryName(category) {
     const names = {
-        definitions: 'Core Definition',
-        parenting: 'Parenting Style',
-        digital: 'Digital Age',
-        groups: 'Group Development',
-        processes: 'Developmental Process'
+        definitions: 'Alapfogalom',
+        parenting: 'Nevelési stílus',
+        digital: 'Digitális kor',
+        groups: 'Csoportfejlődés',
+        processes: 'Fejlődési folyamat'
     };
-    return names[category] || 'General';
+    return names[category] || 'Általános';
 }
 
 function updateStats() {
     const filteredCards = getFilteredCards();
     document.getElementById('card-counter').textContent = 
-        `Card ${currentCardIndex + 1} of ${filteredCards.length}`;
+        `${currentCardIndex + 1}. kártya / ${filteredCards.length}`;
     document.getElementById('mastery-score').textContent = 
-        `Mastered: ${masteredCards.size}/${flashcardsData.length}`;
+        `Elsajátítva: ${masteredCards.size}/${flashcardsData.length}`;
 }
 
 function updateProgress() {
@@ -310,7 +310,7 @@ function updateProgress() {
     document.getElementById('progress-fill').style.width = `${progress}%`;
 }
 
-// ==================== QUIZ MODE ====================
+// ==================== KVÍZ MÓD ====================
 
 function initQuiz() {
     currentQuizIndex = 0;
@@ -328,7 +328,7 @@ function updateQuizQuestion() {
     const question = quizQuestions[currentQuizIndex];
     
     document.getElementById('q-number').textContent = 
-        `Question ${currentQuizIndex + 1} of ${quizQuestions.length}`;
+        `${currentQuizIndex + 1}. kérdés / ${quizQuestions.length}`;
     document.getElementById('q-text').textContent = question.question;
     document.getElementById('user-answer').value = 
         quizAnswers[currentQuizIndex]?.userAnswer || '';
@@ -336,7 +336,7 @@ function updateQuizQuestion() {
     
     // Hide answer section initially
     document.getElementById('answer-section').classList.add('hidden');
-    document.getElementById('show-answer').textContent = 'Show Answer';
+    document.getElementById('show-answer').textContent = 'Válasz mutatása';
     
     // Update assessment buttons if already scored
     const currentScore = quizAnswers[currentQuizIndex]?.score;
@@ -356,7 +356,7 @@ function startTimer() {
         const minutes = Math.floor(elapsed / 60);
         const seconds = elapsed % 60;
         document.getElementById('quiz-timer').textContent = 
-            `Time: ${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+            `Idő: ${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
     }, 1000);
 }
 
@@ -376,7 +376,7 @@ function showQuizSummary() {
             ${totalScore}/${maxScore} (${percentage}%)
         </div>
         <p style="margin-top: 10px; color: #cbd5e1;">
-            ${percentage >= 80 ? '🌟 Excellent work!' : percentage >= 60 ? '👍 Good effort!' : '📚 Keep studying!'}
+            ${percentage >= 80 ? '🌟 Kiváló munka!' : percentage >= 60 ? '👍 Jó teljesítmény!' : '📚 Tanulj tovább!'}
         </p>
     `;
     
@@ -388,7 +388,7 @@ function showQuizSummary() {
     
     if (weakQuestions.length > 0) {
         document.getElementById('weak-areas').innerHTML = `
-            <h3 style="margin-top: 30px; color: #f59e0b;">Areas to Review:</h3>
+            <h3 style="margin-top: 30px; color: #f59e0b;">Átnézendő területek:</h3>
             <ul style="text-align: left; margin: 15px auto; max-width: 600px; line-height: 1.8;">
                 ${weakQuestions.map(q => `<li>${q}</li>`).join('')}
             </ul>
@@ -396,7 +396,7 @@ function showQuizSummary() {
     }
 }
 
-// ==================== CONCEPT MAP ====================
+// ==================== FOGALOMTÉRKÉP ====================
 
 function initConceptMap() {
     document.querySelectorAll('.concept-node').forEach(node => {
@@ -420,12 +420,12 @@ function showConceptDetails(conceptKey) {
     document.getElementById('concept-description').innerHTML = `
         <p style="line-height: 1.7; margin-bottom: 20px;">${concept.description}</p>
         <div style="padding: 15px; background: rgba(99, 102, 241, 0.1); border-radius: 10px;">
-            <strong>Connected to:</strong> ${concept.connections.join(', ')}
+            <strong>Kapcsolódik:</strong> ${concept.connections.join(', ')}
         </div>
     `;
 }
 
-// ==================== EVENT LISTENERS ====================
+// ==================== ESEMÉNYKEZELŐK ====================
 
 document.addEventListener('DOMContentLoaded', () => {
     
@@ -516,10 +516,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             
             answerSection.classList.remove('hidden');
-            btn.textContent = 'Hide Answer';
+            btn.textContent = 'Válasz elrejtése';
         } else {
             answerSection.classList.add('hidden');
-            btn.textContent = 'Show Answer';
+            btn.textContent = 'Válasz mutatása';
         }
     });
     
