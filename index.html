@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedagogy Study Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Pedagogy Study Tool</h1>
+            <p class="subtitle">Master the Fundamentals of Pedagogy with Active Recall</p>
+        </header>
+
+        <nav class="mode-selector">
+            <button class="mode-btn active" data-mode="flashcards">
+                <span class="icon">🎴</span>
+                Flashcards
+            </button>
+            <button class="mode-btn" data-mode="quiz">
+                <span class="icon">✍️</span>
+                Practice Quiz
+            </button>
+            <button class="mode-btn" data-mode="concepts">
+                <span class="icon">🧠</span>
+                Concept Map
+            </button>
+        </nav>
+
+        <!-- Flashcard Mode -->
+        <div id="flashcards-mode" class="study-mode active">
+            <div class="controls">
+                <div class="filter-group">
+                    <label>Filter by Category:</label>
+                    <select id="category-filter">
+                        <option value="all">All Categories</option>
+                        <option value="definitions">Core Definitions</option>
+                        <option value="parenting">Parenting Styles</option>
+                        <option value="digital">Digital Age</option>
+                        <option value="groups">Group Development</option>
+                        <option value="processes">Developmental Processes</option>
+                    </select>
+                </div>
+                <div class="stats">
+                    <span id="card-counter">Card 1 of 25</span>
+                    <span id="mastery-score">Mastered: 0/25</span>
+                </div>
+            </div>
+
+            <div class="flashcard-container">
+                <div class="flashcard" id="flashcard">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <div class="category-badge" id="category-badge">Definition</div>
+                            <div class="question" id="question">Loading...</div>
+                            <p class="hint">Click to reveal answer</p>
+                        </div>
+                        <div class="flashcard-back">
+                            <div class="answer" id="answer">Loading...</div>
+                            <div class="example" id="example"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flashcard-controls">
+                <button class="btn btn-secondary" id="prev-card">← Previous</button>
+                <button class="btn btn-primary" id="flip-card">Flip Card</button>
+                <button class="btn btn-secondary" id="next-card">Next →</button>
+            </div>
+
+            <div class="mastery-buttons">
+                <button class="btn btn-wrong" id="mark-wrong">😕 Need Review</button>
+                <button class="btn btn-ok" id="mark-ok">🤔 Getting There</button>
+                <button class="btn btn-correct" id="mark-correct">✅ Mastered</button>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+        </div>
+
+        <!-- Quiz Mode -->
+        <div id="quiz-mode" class="study-mode">
+            <div class="quiz-header">
+                <h2>Practice Quiz: Short Answer Questions</h2>
+                <p>Answer each question in 2-3 sentences. Click "Show Answer" to compare.</p>
+                <div class="quiz-timer" id="quiz-timer">Time: 00:00</div>
+            </div>
+
+            <div class="quiz-content">
+                <div class="question-card">
+                    <div class="question-number" id="q-number">Question 1 of 10</div>
+                    <div class="question-text" id="q-text">Loading...</div>
+                    
+                    <textarea 
+                        id="user-answer" 
+                        placeholder="Type your answer here (2-3 sentences)..."
+                        rows="5"
+                    ></textarea>
+
+                    <div class="answer-section hidden" id="answer-section">
+                        <h3>Model Answer:</h3>
+                        <div class="model-answer" id="model-answer"></div>
+                        
+                        <div class="self-assessment">
+                            <p>How well did you answer?</p>
+                            <div class="assessment-buttons">
+                                <button class="assess-btn" data-score="0">❌ Missed it</button>
+                                <button class="assess-btn" data-score="1">⚠️ Partial</button>
+                                <button class="assess-btn" data-score="2">✅ Got it!</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quiz-controls">
+                        <button class="btn btn-secondary" id="q-prev">← Previous</button>
+                        <button class="btn btn-primary" id="show-answer">Show Answer</button>
+                        <button class="btn btn-secondary" id="q-next">Next →</button>
+                    </div>
+                </div>
+
+                <div class="quiz-summary hidden" id="quiz-summary">
+                    <h2>🎉 Quiz Complete!</h2>
+                    <div class="score-display" id="score-display"></div>
+                    <div class="weak-areas" id="weak-areas"></div>
+                    <button class="btn btn-primary" id="restart-quiz">Start Over</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Concept Map Mode -->
+        <div id="concepts-mode" class="study-mode">
+            <div class="concept-header">
+                <h2>Interactive Concept Map</h2>
+                <p>Click on any concept to see its definition and connections</p>
+            </div>
+
+            <div class="concept-map">
+                <div class="concept-layer layer-1">
+                    <div class="concept-node" data-concept="culture">
+                        <div class="node-circle">Culture</div>
+                    </div>
+                </div>
+
+                <div class="concept-layer layer-2">
+                    <div class="concept-node" data-concept="enculturation">
+                        <div class="node-circle">Enculturation</div>
+                    </div>
+                </div>
+
+                <div class="concept-layer layer-3">
+                    <div class="concept-node" data-concept="socialization">
+                        <div class="node-circle">Socialization</div>
+                    </div>
+                </div>
+
+                <div class="concept-layer layer-4">
+                    <div class="concept-node" data-concept="education">
+                        <div class="node-circle">Education</div>
+                    </div>
+                </div>
+
+                <div class="concept-layer layer-5">
+                    <div class="concept-node" data-concept="individualization">
+                        <div class="node-circle">Individualization</div>
+                    </div>
+                </div>
+
+                <div class="concept-arenas">
+                    <h3>Arenas of Development</h3>
+                    <div class="arena-nodes">
+                        <div class="concept-node arena" data-concept="family">
+                            <div class="node-circle">Family</div>
+                        </div>
+                        <div class="concept-node arena" data-concept="school">
+                            <div class="node-circle">School</div>
+                        </div>
+                        <div class="concept-node arena" data-concept="media">
+                            <div class="node-circle">Media</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="concept-details" id="concept-details">
+                <h3 id="concept-title">Select a concept to learn more</h3>
+                <div id="concept-description">Click on any node in the map above.</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
